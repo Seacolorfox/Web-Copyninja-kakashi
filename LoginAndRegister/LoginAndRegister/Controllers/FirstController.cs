@@ -13,5 +13,26 @@ namespace LoginAndRegister.Controllers
         {
             return View();
         }
+
+        public ActionResult Login()
+        {
+            ViewBag.LoginState = "登陆前...";
+            return View();
+        }
+
+        public ActionResult Register()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult Login(FormCollection formCollection)
+        {
+            string email = formCollection["inputEmail3"];
+            string password = formCollection["inputPassword3"];
+
+            ViewBag.LoginState =email+ "登陆后...";
+            return View();
+        }
     }
+
 }
