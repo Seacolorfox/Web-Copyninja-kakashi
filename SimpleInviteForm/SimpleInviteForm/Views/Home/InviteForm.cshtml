@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "InviteForm";
+}
+
+<h2>InviteForm</h2>
+
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link href="~/Content/Style.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="text-center">
+        @ViewBag.HourJudge World(From the view)
+        <h2>
+            我们将会有一个愉♂悦的party
+        </h2>
+        <h3>您是否参加？</h3>
+        <div class="btn btn-success">
+            @Html.ActionLink("PVSP Now", "RvspForm")
+        </div>
+    </div>
+</body>
+</html>
