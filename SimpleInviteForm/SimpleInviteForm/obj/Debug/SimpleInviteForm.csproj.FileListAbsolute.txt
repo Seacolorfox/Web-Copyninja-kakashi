@@ -68,7 +68,6 @@ E:\workPlace\Web-Copyninja-kakashi\SimpleInviteForm\SimpleInviteForm\bin\zh-Hans
 E:\workPlace\Web-Copyninja-kakashi\SimpleInviteForm\SimpleInviteForm\bin\zh-Hans\System.Web.Webpages.Razor.resources.dll
 E:\workPlace\Web-Copyninja-kakashi\SimpleInviteForm\SimpleInviteForm\bin\zh-Hans\System.Web.Helpers.resources.dll
 E:\workPlace\Web-Copyninja-kakashi\SimpleInviteForm\SimpleInviteForm\bin\zh-Hans\System.Web.Mvc.resources.dll
-E:\workPlace\Web-Copyninja-kakashi\SimpleInviteForm\SimpleInviteForm\obj\Debug\SimpleInviteForm.csprojAssemblyReference.cache
 E:\workPlace\Web-Copyninja-kakashi\SimpleInviteForm\SimpleInviteForm\obj\Debug\SimpleInviteForm.csproj.CoreCompileInputs.cache
 E:\workPlace\Web-Copyninja-kakashi\SimpleInviteForm\SimpleInviteForm\obj\Debug\SimpleInviteForm.csproj.CopyComplete
 E:\workPlace\Web-Copyninja-kakashi\SimpleInviteForm\SimpleInviteForm\obj\Debug\SimpleInviteForm.dll
