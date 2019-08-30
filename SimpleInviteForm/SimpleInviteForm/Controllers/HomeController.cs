@@ -9,15 +9,19 @@ namespace SimpleInviteForm.Controllers
     public class HomeController : Controller
     {
         // GET: Home
+        public string Hello() => "Hello ASP.NET MVC!";
         public ActionResult Index()
         {
-
             return View();
         }
         public ActionResult InviteForm()
         {
             int Hour = DateTime.Now.Hour;
             ViewBag.HourJudge = Hour < 12 ? "Good Morning" : "Good Afternoon";
+            return View();
+        }
+        public ActionResult RvspForm()
+        {
             return View();
         }
     }
