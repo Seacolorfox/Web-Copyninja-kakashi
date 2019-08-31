@@ -5,4 +5,29 @@
 }
 
 <h2>RvspForm</h2>
-
+<body>
+    <div class="p"></div>
+    @using (Html.BeginForm())
+    {
+        @Html.ValidationSummary()
+        <div class="form-group">
+            <label>Your Name:</label>
+            @Html.TextBoxFor(x => x.Name, new { @class = "formcontrol" })
+        </div>
+        <div class="form-group">
+            <label>Your Email:</label>
+            @Html.TextBoxFor(x => x.Email, new { @class = "formcontrol" })
+        </div>
+        <div class="form-group">
+            <label>Your phone : </label>
+            @Html.TextBoxFor(x => x.PhoneNum, new { @class = "formcontrol" })
+        </div>
+        <div class="form-group">
+            <label>确定要♂来吗？</label>
+            @Html.DropDownListFor(x => x.WillAttend, new[] { new SelectListItem() { Text = "oh耶 确♂定", Value = bool.FalseString }, new SelectListItem() { Text = "杰哥不要啊杰哥", Value = bool.FalseString } },"请♂选择",new {@class="formcontrol" })
+        </div>
+        <div class="text-center">
+            <input class="btn btn-success" type="submit" value="蕉♂上去" />
+        </div>
+     }
+</body>
