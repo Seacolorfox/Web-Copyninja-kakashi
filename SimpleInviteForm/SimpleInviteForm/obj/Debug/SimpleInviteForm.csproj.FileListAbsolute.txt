@@ -72,3 +72,4 @@ E:\workPlace\Web-Copyninja-kakashi\SimpleInviteForm\SimpleInviteForm\obj\Debug\S
 E:\workPlace\Web-Copyninja-kakashi\SimpleInviteForm\SimpleInviteForm\obj\Debug\SimpleInviteForm.csproj.CopyComplete
 E:\workPlace\Web-Copyninja-kakashi\SimpleInviteForm\SimpleInviteForm\obj\Debug\SimpleInviteForm.dll
 E:\workPlace\Web-Copyninja-kakashi\SimpleInviteForm\SimpleInviteForm\obj\Debug\SimpleInviteForm.pdb
+E:\workPlace\Web-Copyninja-kakashi\SimpleInviteForm\SimpleInviteForm\obj\Debug\SimpleInviteForm.csprojAssemblyReference.cache
