@@ -27,7 +27,11 @@ namespace SimpleInviteForm.Controllers
             return View();
         }
         [HttpPost]
-        public ActionResult RvspForm(GuestResponse guestResponse) => View("Thanks", guestResponse);
+        public ActionResult RvspForm(GuestResponse guestResponse)
+        {
+           // bool willAttend = guestResponse["inputWillAttend"];
+            return View("Thanks", guestResponse);
+        }
         public ActionResult Thanks() => View();
     }
 }
