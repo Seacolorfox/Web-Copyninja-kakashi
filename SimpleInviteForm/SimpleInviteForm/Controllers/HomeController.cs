@@ -24,5 +24,6 @@ namespace SimpleInviteForm.Controllers
         {
             return View();
         }
+        public ActionResult Thanks() => View();
     }
 }
