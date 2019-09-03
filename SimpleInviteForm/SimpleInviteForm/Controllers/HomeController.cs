@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using SimpleInviteForm.Models;
 
 namespace SimpleInviteForm.Controllers
 {
@@ -20,10 +21,13 @@ namespace SimpleInviteForm.Controllers
             ViewBag.HourJudge = Hour < 12 ? "Good Morning" : "Good Afternoon";
             return View();
         }
+        [HttpGet]
         public ActionResult RvspForm()
         {
             return View();
         }
+        [HttpPost]
+        public ActionResult RvspForm(GuestResponse guestResponse) => View("Thanks", guestResponse);
         public ActionResult Thanks() => View();
     }
 }
