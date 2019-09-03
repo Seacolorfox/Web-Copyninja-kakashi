@@ -1,0 +1,37 @@
+﻿@model SimpleInviteForm.Models.GuestResponse
+
+@{
+    ViewBag.Title = "Thanks";
+}
+
+<h2>Thanks</h2>
+@try
+{
+    WebMail.SmtpServer = "smtp.example.com";
+    WebMail.SmtpPort = 587;
+    WebMail.EnableSsl = true;
+    WebMail.UserName = "mySmtpUserName";
+    WebMail.Password = "mySmtpPassword";
+    WebMail.From = "rsvps@example.com";
+    WebMail.Send("part-host.example.com", "RSVP Notifiacion", Model.Name + "is" + ((Model.WillAttend ?? false) ? "" : "not") + "attending");
+}
+catch(Exception)
+{
+    @:<b>“对不起，我们未能为您发送邮件”</b>
+}
+<div>
+    <h1>Thank you,@Model.Name</h1>
+    <div class="lead">
+        @if (Model.WillAttend == true)
+        {
+            @:感谢您的到来。
+        }
+        else
+        {
+            @:宁未能参加我们的party♂，我们深♂表遗憾。
+        }
+
+
+    </div>
+</div>
+
