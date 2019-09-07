@@ -29,8 +29,15 @@ namespace SimpleInviteForm.Controllers
         [HttpPost]
         public ActionResult RvspForm(GuestResponse guestResponse)
         {
+            if(ModelState.IsValid)
+            {
+                return View("Thanks", guestResponse);
+            }
            // bool willAttend = guestResponse["inputWillAttend"];
-            return View("Thanks", guestResponse);
+           else
+            {
+                return View();
+            }
         }
         public ActionResult Thanks() => View();
     }
