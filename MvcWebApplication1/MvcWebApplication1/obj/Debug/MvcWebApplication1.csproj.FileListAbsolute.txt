@@ -48,6 +48,8 @@ E:\workPlace\Web-Copyninja-kakashi\MvcWebApplication1\MvcWebApplication1\bin\ros
 E:\workPlace\Web-Copyninja-kakashi\MvcWebApplication1\MvcWebApplication1\bin\roslyn\VBCSCompiler.exe
 E:\workPlace\Web-Copyninja-kakashi\MvcWebApplication1\MvcWebApplication1\bin\roslyn\VBCSCompiler.exe.config
 E:\workPlace\Web-Copyninja-kakashi\MvcWebApplication1\MvcWebApplication1\bin\Antlr3.Runtime.dll
+E:\workPlace\Web-Copyninja-kakashi\MvcWebApplication1\MvcWebApplication1\bin\EntityFramework.dll
+E:\workPlace\Web-Copyninja-kakashi\MvcWebApplication1\MvcWebApplication1\bin\EntityFramework.SqlServer.dll
 E:\workPlace\Web-Copyninja-kakashi\MvcWebApplication1\MvcWebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 E:\workPlace\Web-Copyninja-kakashi\MvcWebApplication1\MvcWebApplication1\bin\Microsoft.Web.Infrastructure.dll
 E:\workPlace\Web-Copyninja-kakashi\MvcWebApplication1\MvcWebApplication1\bin\Newtonsoft.Json.dll
@@ -59,6 +61,8 @@ E:\workPlace\Web-Copyninja-kakashi\MvcWebApplication1\MvcWebApplication1\bin\Sys
 E:\workPlace\Web-Copyninja-kakashi\MvcWebApplication1\MvcWebApplication1\bin\System.Web.WebPages.dll
 E:\workPlace\Web-Copyninja-kakashi\MvcWebApplication1\MvcWebApplication1\bin\System.Web.WebPages.Razor.dll
 E:\workPlace\Web-Copyninja-kakashi\MvcWebApplication1\MvcWebApplication1\bin\WebGrease.dll
+E:\workPlace\Web-Copyninja-kakashi\MvcWebApplication1\MvcWebApplication1\bin\EntityFramework.xml
+E:\workPlace\Web-Copyninja-kakashi\MvcWebApplication1\MvcWebApplication1\bin\EntityFramework.SqlServer.xml
 E:\workPlace\Web-Copyninja-kakashi\MvcWebApplication1\MvcWebApplication1\bin\System.Web.Helpers.xml
 E:\workPlace\Web-Copyninja-kakashi\MvcWebApplication1\MvcWebApplication1\bin\System.Web.Mvc.xml
 E:\workPlace\Web-Copyninja-kakashi\MvcWebApplication1\MvcWebApplication1\bin\System.Web.Optimization.xml
@@ -76,8 +80,8 @@ E:\workPlace\Web-Copyninja-kakashi\MvcWebApplication1\MvcWebApplication1\bin\zh-
 E:\workPlace\Web-Copyninja-kakashi\MvcWebApplication1\MvcWebApplication1\bin\zh-Hans\System.Web.WebPages.resources.dll
 E:\workPlace\Web-Copyninja-kakashi\MvcWebApplication1\MvcWebApplication1\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
 E:\workPlace\Web-Copyninja-kakashi\MvcWebApplication1\MvcWebApplication1\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
-E:\workPlace\Web-Copyninja-kakashi\MvcWebApplication1\MvcWebApplication1\obj\Debug\MvcWebApplication1.csprojAssemblyReference.cache
 E:\workPlace\Web-Copyninja-kakashi\MvcWebApplication1\MvcWebApplication1\obj\Debug\MvcWebApplication1.csproj.CoreCompileInputs.cache
 E:\workPlace\Web-Copyninja-kakashi\MvcWebApplication1\MvcWebApplication1\obj\Debug\MvcWebApplication1.csproj.CopyComplete
 E:\workPlace\Web-Copyninja-kakashi\MvcWebApplication1\MvcWebApplication1\obj\Debug\MvcWebApplication1.dll
 E:\workPlace\Web-Copyninja-kakashi\MvcWebApplication1\MvcWebApplication1\obj\Debug\MvcWebApplication1.pdb
+E:\workPlace\Web-Copyninja-kakashi\MvcWebApplication1\MvcWebApplication1\obj\Debug\MvcWebApplication1.csprojAssemblyReference.cache
