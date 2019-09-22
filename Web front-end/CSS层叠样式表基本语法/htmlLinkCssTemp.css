@@ -1,0 +1,20 @@
+body{
+    background-color: gray;
+}
+#h1_1{
+    text-align: center;
+}
+#h1_2{
+    text-align: right;
+}
+#h4_1{
+    color: blue;
+}
+#h4_2{
+    color: red;
+}
+#id_Temp{
+    color: blue;
+    text-decoration: underline;
+    background-color: yellow;
+}
