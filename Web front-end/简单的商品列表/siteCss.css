@@ -1,0 +1,9 @@
+body{
+    font: 12px/1.5 tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif
+}
+#saleTable .sT_SaleBd .item{
+    width: 206px;
+    border: 1px solid #f4f4f4;
+    float: left;
+    padding: 20px;
+}
