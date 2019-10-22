@@ -1,9 +1,52 @@
 body{
-    font: 12px/1.5 tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif
+    font: 12px/1.5 tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+}
+body,li,ul {
+    margin: 0;
+    padding: 0;
+}
+body a{
+    color: #3C3C3C;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+em{
+    font-style: normal;
+}
+#saleTable .line-3{
+    height: 22px;
+    line-height: 22px;
 }
 #saleTable .sT_SaleBd .item{
     width: 206px;
     border: 1px solid #f4f4f4;
     float: left;
     padding: 20px;
+}
+#saleTable .sell{
+    float: right;
+    color: #999;
+}
+#saleTable .comment,
+#saleTable .collect{
+    color: #999;
+    margin-right: 10px;
+}
+#saleTable .discountPrice{
+    font-size: 22px;
+    margin-right: 3px;
+    color: #ff5000;
+    font-family: arial;
+}
+#saleTable .Price{
+    color: #999;
+    font-family: arial;
+    text-decoration: line-through;
+}
+#saleTable .comment em,
+#saleTable .collect em {
+    font-family: arial;
+    color: #999;
 }
