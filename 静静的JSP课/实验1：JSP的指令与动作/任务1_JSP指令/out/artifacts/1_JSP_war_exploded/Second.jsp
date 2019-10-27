@@ -9,6 +9,5 @@
 <html>
 <body>
     <%@include file="hello.txt"%>
-    <h1>jsp2</h1>
 </body>
 </html>
