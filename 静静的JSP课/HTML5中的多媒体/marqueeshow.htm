@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>跑马灯演示</title>
+    <style>
+        .mainBody{
+            background-color: aqua;
+            width: 35%;
+            height: 35%;
+        }
+        #moveTextBody{
+            background-color: yellow;
+        }
+        #moveText {
+            color: red;
+            animation-direction: alternate;
+            position:relative;
+            animation:myMove 1s;
+            animation-iteration-count:3;
+        }
+        @keyframes myMove{
+            from {left:0px;}
+	        to {left:200px;}
+        }
+
+    </style>
+</head>
+<body>
+    <div class="mainBody">
+            <div id="moveTextBody">
+                <h1 id="moveText"><i>welcome to you</i></h1>
+            </div>
+                <hr>
+                <h1>A simple HTML document</h1>
+                <div>
+                    <p><i>Welcome to the world of HTML</i></p>
+                    <p>This is a simple HTML document.It is to give you an out line of how to write Html file and how the markup tags work in the HTML file</p>
+                    <p>Follow is three chapters</p>
+                    <ul>
+                        <li>This is the chapter one</li>
+                        <li>This is the chapter two</li>
+                        <li>This is the chapter three</li>
+                    </ul>
+                </div>
+    </div>
+
+</body>
+</html>
