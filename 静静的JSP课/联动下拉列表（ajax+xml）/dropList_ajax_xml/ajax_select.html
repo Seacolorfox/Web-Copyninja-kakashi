@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ajax&XmlDropList</title>
+</head>
+<body>
+    <script>
+        var xmlHttp;
+        function creatXMLhttp()
+        {
+            if(window.XMLHttpRequest)
+            {
+                xmlHelp = new XMLHttpRequest();
+            }
+            else
+            {
+                xmlHelp = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+        }
+        function getCity()
+        {
+            creatXMLhttp();
+            xmlHttp.open("POST","allarea.xml");
+
+        }
+        function getCityCallback()
+        {
+            if (xmlHttp.readyState == 4)
+            {
+
+            }
+        }
+    </script>
+</body>
+</html>
