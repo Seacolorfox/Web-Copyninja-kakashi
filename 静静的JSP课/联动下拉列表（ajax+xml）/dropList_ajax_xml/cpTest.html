@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript">
+        var xmlHttp;
+        function createXMLHttp()
+        {
+            if(window.XMLHttpRequest)
+            {
+                xmlHttp = new XMLHttpRequest();
+            }
+            else
+            {
+                xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+        }
+
+        window.onload=function(){
+            createXMLHttp();
+            xmlHttp.onreadystatechange=function(){
+                if(xmlHttp.readyState==4 &&xmlHttp.status==200){
+                    xmlDoc=xmlHttp.responseXML;
+                    var x=xmlDoc.getElementsByTagName("province");
+                    for(var i=0;i<x.length;i++){
+                        var y=document.getElementById("province");
+                        var o=document.createElement("option");
+                        o.appendChild(document.createTextNode(x[i].childNodes[0].childNodes[0].data));
+                        y.appendChild(o);
+                    }
+
+                    //添加city下拉列表
+                    var nodes=x[0].childNodes;
+                    var z=document.getElementById("city");
+                    for(var i=1;i<nodes.length;i++){
+                        var o=document.createElement("option");
+                        o.appendChild(document.createTextNode(nodes[i].childNodes[0].childNodes[0].data));
+                        z.appendChild(o);
+                    }
+
+                }
+            }
+            xmlHttp.open("get","xml/city.xml",true);
+            xmlHttp.send();
+        }
+
+        function changeProvince(){
+            createXMLHttp();
+            xmlHttp.onreadystatechange=function(){
+
+                if(xmlHttp.readyState==4 &&xmlHttp.status==200){
+                    xmlDoc=xmlHttp.responseXML;
+                    var index=document.getElementById("province").selectedIndex;
+                    var x=xmlDoc.getElementsByTagName("province");
+                    var cityNodes=x[index].childNodes;
+                    var z=document.getElementById("city");
+                    z.innerHTML="";
+                    for(var i=1;i<cityNodes.length;i++){
+                        var o=document.createElement("option");
+                        o.appendChild(document.createTextNode(cityNodes[i].childNodes[0].childNodes[0].data));
+                        z.appendChild(o);
+                    }
+
+                }
+            }
+            xmlHttp.open("get","city.xml",true);
+            xmlHttp.send();
+        }
+    </script>
+</head>
+<body>
+<select id="province" onchange="changeProvince()">
+    <option>-select-</option>
+</select>
+<select id="city">
+</select>
+</body>
+</html>

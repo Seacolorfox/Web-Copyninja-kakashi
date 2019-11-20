@@ -20,7 +20,7 @@
         {// code for IE5, IE6
             xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
         }
-        xmlHttp.open("POST","content.html")
+        xmlHttp.open("POST","content.html",true)
         xmlHttp.onreadystatechange = function ()
         {
             if(xmlHttp.readyState == 4)
@@ -32,9 +32,10 @@
                 }
             }
         }
-        xmlHttp.send();
+        xmlHttp.send(null);
     }
 </script>
 <input type="button" onclick="showMsg()" value="click!!">
+<span id="msg"></span>
 </body>
 </html>

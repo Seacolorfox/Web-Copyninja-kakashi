@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resume>
+    <province>
+        <pname>湖南省</pname>
+        <city>
+            <cname>长沙市</cname>
+            <district>
+                <dname>天心区</dname>
+            </district>
+            <district>
+                <dname>芙蓉区</dname>
+            </district>
+            <district>
+                <dname>开福区</dname>
+            </district>
+        </city>
+        <city>
+            <cname>株洲市</cname>
+            <district>
+                <dname>**区</dname>
+            </district>
+        </city>
+        <city>
+            <cname>湘潭市</cname>
+            <district>
+                <dname>**区</dname>
+            </district>
+        </city>
+    </province>
+  <province>
+     <pname>湖北省</pname>
+     <city>
+       <cname>武汉市</cname>
+       <district>
+          <dname>**区</dname>
+       </district>
+     </city>
+     <city>
+       <cname>襄樊市</cname>
+       <district>
+          <dname>**区</dname>
+       </district>
+     </city>
+  </province>
+  <province>
+     <pname>广东省</pname>
+     <city>
+       <cname>广州市</cname>
+       <district>
+          <dname>**区</dname>
+       </district>
+     </city>
+     <city>
+       <cname>珠海市</cname>
+       <district>
+          <dname>**区</dname>
+       </district>
+     </city>
+  </province>
+</resume>
+<resume>
+<province>
+    <pname>湖南省</pname>
+    <city>
+        <cname>益阳市</cname>
+        <district>
+            <dname>朝阳区</dname>
+        </district>
+    </city>
+</province>
+</resume>
