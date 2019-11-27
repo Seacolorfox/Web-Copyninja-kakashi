@@ -147,3 +147,4 @@ D:\workplace\Web-Copyninja-kakashi\LoginAndRegister\LoginAndRegister\obj\Debug\L
 D:\workplace\Web-Copyninja-kakashi\LoginAndRegister\LoginAndRegister\obj\Debug\LoginAndRegister.csproj.CopyComplete
 D:\workplace\Web-Copyninja-kakashi\LoginAndRegister\LoginAndRegister\obj\Debug\LoginAndRegister.dll
 D:\workplace\Web-Copyninja-kakashi\LoginAndRegister\LoginAndRegister\obj\Debug\LoginAndRegister.pdb
+D:\workplace\Web-Copyninja-kakashi\LoginAndRegister\LoginAndRegister\obj\Debug\LoginAndRegister.csprojAssemblyReference.cache
