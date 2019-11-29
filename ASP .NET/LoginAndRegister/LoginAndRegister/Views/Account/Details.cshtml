@@ -1,0 +1,58 @@
+﻿@model LoginAndRegister.Models.UserInfo
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>UserInfo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.userName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.userName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.userPwd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.userPwd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.userEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.userEmail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.userRank)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.userRank)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RegisterTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RegisterTime)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.UserId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

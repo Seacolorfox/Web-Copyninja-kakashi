@@ -1,0 +1,33 @@
+﻿@model LoginAndRegister.Models.UserInfo
+@{
+    ViewBag.Title = "test";
+}
+
+<h2>test</h2>
+<script>
+    $.getJSON("/Account/CheckUser/?username=" + username, function (data) {
+ if(data) {
+    //用户名存在
+ }
+ });
+</script>
+
+ @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { name = "register",onsubmit = "return checkform()"}))
+  {
+ @Html.LabelFor(model => model.userName)
+  @Html.TextBoxFor(model => model.userName, new { @class = "text-box" })
+  
+  @Html.LabelFor(model => model.userPwd)
+  @Html.EditorFor(model => model.userPwd)
+  
+  @Html.LabelFor(model => model.userEmail)
+ 
+     <input class="regBtn" type="submit" value="注册" />
+ <input class="resetBtn" type="reset" value="重置" />
+ 
+ //令牌，防止重复提交
+ @Html.AntiForgeryToken()
+ //模型错误信息汇总，也可以在每一项后面添加
+ //@Html.ValidationMessage
+ @Html.ValidationSummary(false)
+ }
