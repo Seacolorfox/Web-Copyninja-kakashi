@@ -1,64 +1,80 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="GBK">
-    <title>Ajax&XmlDropList</title>
-    <script>
+    <meta http-equiv="Content-Type" content="text/html; charset=GBK">
+    <title>ajax_select</title>
+    <script type="text/javascript">
         var xmlHttp;
-
-        function creatXMLHttp()
+        function createXMLHttp()
         {
             if(window.XMLHttpRequest)
             {
-                xmlHttp = new XMLHttpRequest();
+                xmlHttp=new XMLHttpRequest();
             }
             else
             {
                 xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
             }
         }
-        function getCity()
+        window.onload=function()
         {
-            creatXMLHttp();
-            xmlHttp.onreadystatechange=getCityCallback();
-            xmlHttp.open("POST",'allarea.xml',true)
+            createXMLHttp();
+            xmlHttp.onreadystatechange=function()
+            {
+                if(xmlHttp.readyState==4 &&xmlHttp.status==200)
+                {
+                    xmlDoc=xmlHttp.responseXML;
+                    var x=xmlDoc.getElementsByTagName("province");
+                    for(var i=0;i<x.length;i++)
+                    {
+                        var y=document.getElementById("province");
+                        var o=document.createElement("option");
+                        o.appendChild(document.createTextNode(x[i].childNodes[0].childNodes[0].data));
+                        y.appendChild(o);
+                    }
 
-            xmlHttp.send(null);
+                    //添加city下拉列表
+                    var nodes=x[0].childNodes;
+                    var z=document.getElementById("city");
+                    for(var i=1;i<nodes.length;i++)
+                    {
+                        var o=document.createElement("option");
+                        o.appendChild(document.createTextNode(nodes[i].childNodes[0].childNodes[0].data));
+                        z.appendChild(o);
+                    }
+                }
+            }
+            xmlHttp.open("get","xml/city.xml",true);
+            xmlHttp.send();
         }
-        function getCityCallback()
+
+        function changeProvince()
         {
-            if (xmlHttp.readyState != 4)
+            createXMLHttp();
+            xmlHttp.onreadystatechange=function()
             {
-                return;
+                if(xmlHttp.readyState==4 &&xmlHttp.status==200)
+                {
+                    xmlDoc=xmlHttp.responseXML;
+                    var index=document.getElementById("province").selectedIndex;
+                    var x=xmlDoc.getElementsByTagName("province");
+                    var cityNodes=x[index].childNodes;
+                    var z=document.getElementById("city");
+                    z.innerHTML="";
+                    for(var i=1;i<cityNodes.length;i++){
+                        var o=document.createElement("option");
+                        o.appendChild(document.createTextNode(cityNodes[i].childNodes[0].childNodes[0].data));
+                        z.appendChild(o);
+                    }
+                }
             }
-            if (xmlHttp.status != 200)
-            {
-                alert("Problem retrieving XML data");
-                return;
-            }
-            var allarea=xmlHttp.responseXML.getElementsByTagName("allarea")[0].childNodes;
-            var select = document.getElementById("city");
-            select.length=1;
-            select.options[0].selected=true;
-            for (var i=0;i<allarea.length;i++)
-            {
-                var area=allarea[i];
-                var option = document.createElement("option");
-                var id = area.getElementsByTagName("id")[0].firstChild.nodeValue;
-                var title = area.getElementsByTagName("title")[0].firstChild.nodeValue;
-                option.setAttribute("value",id);
-                option.appendChild(document.createTextNode(title));
-                select.appendChild(option);
-            }
+            xmlHttp.open("get","xml/city.xml",true);
+            xmlHttp.send();
         }
     </script>
 </head>
-<body onload="getCity()">
-<form action="" method="post">
-    请选择喜欢的城市:
-    <select name="city">
-        <option value="0"> -请选择城市-</option>
-    </select>
-</form>
+<body>
+<select id="province" onchange="changeProvince()"></select>
+<select id="city"></select>
 </body>
 </html>
