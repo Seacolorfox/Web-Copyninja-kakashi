@@ -1,3 +1,3 @@
 # Web-Copyninja-kakashi
 web&拷贝忍者卡卡西
-准备（摸鱼）ing...
+用来放作业和练习的
