@@ -1,0 +1,9 @@
+﻿@model LoginAndRegister.Models.Customers
+@{
+    ViewBag.Title = "about";
+}
+<h2>about</h2>
+@using (Html.BeginForm())
+{
+    @Html.TextBox(x=>x.ContactName)
+}

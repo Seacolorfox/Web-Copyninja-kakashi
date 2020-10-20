@@ -12,7 +12,12 @@
 </head>
 <body>
 <div>
-
+    <form action="LoginServlet" method="post"?>
+        <input type="text" name="userName">
+        <input type="password" name="userPw">
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+    </form>
 </div>
 </body>
 </html>

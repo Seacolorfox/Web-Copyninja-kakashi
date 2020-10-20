@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Main>
+  <Category Name="Movie" ChsName="电影" ID="01000000">
+    <ChildCategory Name="Literature" ChsName="文艺" ID="01010000" />
+    <ChildCategory Name="Act" ChsName="动作" ID="01020000" />
+    <ChildCategory Name="Comedy" ChsName="喜剧" ID="01030000" />
+    <ChildCategory Name="Love" ChsName="爱情" ID="01040000" />
+    <ChildCategory Name="Fiction" ChsName="科幻" ID="01050000" />
+    <ChildCategory Name="War" ChsName="战争" ID="01060000" />
+    <ChildCategory Name="Dracula" ChsName="恐怖" ID="01070000" />
+    <ChildCategory Name="Disaster" ChsName="灾难" ID="01080000" />
+    <ChildCategory Name="Ethic" ChsName="伦理" ID="01090000" />
+    <ChildCategory Name="Magic" ChsName="魔幻" ID="01100000" />
+    <ChildCategory Name="Cliffhang" ChsName="悬疑" ID="01110000" />
+    <ChildCategory Name="Music" ChsName="音乐" ID="01120000" />
+    <ChildCategory Name="Swordsmen" ChsName="武侠" ID="01130000" />
+    <ChildCategory Name="Criminal" ChsName="罪案" ID="01140000" />
+    <ChildCategory Name="Newsreel" ChsName="记录" ID="01150000" />
+  </Category>
+  <Categroy Name="Drama" ChsName="连续剧" ID="02000000">
+    <ChildCategory Name="Mainland" ChsName="大陆" ID="02010000" />
+    <ChildCategory Name="HongKong" ChsName="香港" ID="02020000" />
+    <ChildCategory Name="Taiwan" ChsName="台湾" ID="02030000" />
+    <ChildCategory Name="USA" ChsName="美国" ID="02040000" />
+    <ChildCategory Name="Japan" ChsName="日本" ID="02050000" />
+    <ChildCategory Name="Korea" ChsName="韩国" ID="02060000" />
+  </Categroy>
+  <Category Name="Entertaiment" ChsName="综艺" ID="03000000">
+    <ChildCategory Name="Mainland" ChsName="大陆" ID="03010000" />
+    <ChildCategory Name="HongKong" ChsName="香港" ID="03020000" />
+    <ChildCategory Name="Taiwan" ChsName="台湾" ID="03030000" />
+    <ChildCategory Name="Korea" ChsName="韩国" ID="03040000" />
+  </Category>
+  <Category Name="Anime" ChsName="动画" ID="04000000">
+    <ChildCategory Name="TV" ChsName="电视" ID="04010000" />
+    <ChildCategory Name="OVA" ChsName="OVA" ID="04020000" />
+    <ChildCategory Name="Theater" ChsName="剧场" ID="04030000" />
+  </Category>
+  <Category Name="Music" ChsName="音乐" ID="05000000">
+    <ChildCategory Name="MV" ChsName="MV" ID="05010000" />
+    <ChildCategory Name="OST" ChsName="影视原声" ID="05020000" />
+    <ChildCategory Name="China" ChsName="华语" ID="05030000" />
+    <ChildCategory Name="Korea" ChsName="韩语" ID="05040000" />
+    <ChildCategory Name="Japan" ChsName="日语" ID="05050000" />
+    <ChildCategory Name="Occident" ChsName="欧美" ID="05060000" />
+  </Category>
+  <Category Name="Game" ChsName="游戏" ID="06000000">
+    <ChildCategory Name="RPG" ChsName="角色扮演" ID="06010000" />
+    <ChildCategory Name="RTS" ChsName="即时战略" ID="06020000" />
+    <ChildCategory Name="Sports" ChsName="体育运动" ID="06030000" />
+    <ChildCategory Name="Action" ChsName="动作" ID="06040000" />
+    <ChildCategory Name="Adventure" ChsName="冒险" ID="06050000" />
+    <ChildCategory Name="Strategy" ChsName="策略" ID="06060000" />
+  </Category>
+  <Category Name="Soft" ChsName="软件" ID="07000000">
+
+  </Category>
+  <Category Name="Ebook" ChsName="电子书" ID="07000000">
+    <ChildCategory Name="Book" ChsName="图书" ID="07010000" />
+    <ChildCategory Name="Magazine" ChsName="杂志" ID="07020000" />
+  </Category>
+  <Category Name="Study" ChsName="学习" ID="08000000">
+
+  </Category>
+</Main>

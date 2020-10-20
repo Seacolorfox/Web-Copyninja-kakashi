@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "LoginServlet")
+@WebServlet("/LoginServlet")
 public class LoginServlet extends HttpServlet
 {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
@@ -22,6 +22,11 @@ public class LoginServlet extends HttpServlet
         if (user != null)
         {
             request.getSession().setAttribute("user",user);
+            request.getRequestDispatcher("message.jsp").forward(request,response);
+        }
+        else
+        {
+
         }
     }
 

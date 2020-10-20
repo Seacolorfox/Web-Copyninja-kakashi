@@ -47,6 +47,8 @@ public class UserDAO
                 user.setUserName(rs.getString("userName"));
                 user.setPassWd(rs.getString("passWd"));
             }
+            rs.close();
+            ps.close();
         }
         catch (SQLException e)
         {
