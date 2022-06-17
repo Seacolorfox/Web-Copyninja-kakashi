@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<select id="demo">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+</select>
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+$("#demo").change(function () {
+    var val = $(this).val();
+    var res = confirm("您确认修改为"+val+"么？");
+    if(res == true){
+        //确认
+        $(this).attr("hook",val);
+    }else{
+        //取消
+        if(typeof $(this).attr("hook") == "undefined"){
+            //尚未做过选择，重置为默认选择
+            $(this).val($(this).children("option:first-child").val());
+        }else{
+            //重置为修改之前的选择
+            $(this).val($(this).attr("hook"));
+        }
+    }
+});
+</script>
+</body>
+</html>

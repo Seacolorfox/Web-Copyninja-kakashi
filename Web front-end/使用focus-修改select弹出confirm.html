@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <select>
+            <option value="中文">中文</option>
+            <option value="英文">英文</option>
+            <option value="日文">日文</option>
+            <option value="德文">德文</option>
+        </select>
+    </div>
+</body>
+<script>
+    $(function () {
+        $('select').change(function () {
+            var newOne = $(this).val();
+            console.log($(this).val())  //改变后的值
+        }).focus(function () {
+            var oldOne = $(this).val();
+            console.log($(this).val())   //改变前的值
+        })
+    })
+</script>
+</html>
